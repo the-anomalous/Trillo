@@ -1,0 +1,12 @@
+.page-content {
+  display: flex;
+
+  .nav-sidebar{
+    width: 18%;
+  }
+
+  .main-content{
+    flex: 1;
+  }
+}
+
