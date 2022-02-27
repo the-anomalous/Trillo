@@ -1,12 +1,16 @@
 import React from 'react'
 import Header from '../header/header.component'
-import PageContent from '../page-content/page-content.component'
+import Sidebar from '../sidebar/sidebar.component'
+import MainContent from '../main-content/main-content.component'
 
 const AppContainer = () => {
   return (
     <div className='container'>
       <Header />
-      <PageContent/>
+      <div className='page-content' >
+        <Sidebar />
+        <MainContent/>
+      </div>
     </div>
   )
 }
