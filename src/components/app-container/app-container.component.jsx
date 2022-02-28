@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../header/header.component'
 import Sidebar from '../sidebar/sidebar.component'
-import MainContent from '../main-content/main-content.component'
+import HotelView from '../hotel-view/hotel-view.component'
 
 const AppContainer = () => {
   return (
@@ -9,7 +9,7 @@ const AppContainer = () => {
       <Header />
       <div className='page-content' >
         <Sidebar />
-        <MainContent/>
+        <HotelView/>
       </div>
     </div>
   )

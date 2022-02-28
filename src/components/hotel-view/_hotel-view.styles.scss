@@ -1,0 +1,21 @@
+.hotel-view {
+  flex: 1;
+
+  .btn-inline{
+    border: none;
+    outline: none;
+    font-size: inherit;
+    background-color: transparent;
+    color: var(--color-primary);
+    border-bottom: 1px solid currentColor;
+    padding: .5rem;
+    cursor: pointer;
+    transition-delay: .1s;
+    letter-spacing: .2px;
+
+    &:hover {
+      color: var(--color-grey-dark-1);
+      animation: pulsate 1s infinite;
+    }
+  }
+}

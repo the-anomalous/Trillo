@@ -1,7 +1,10 @@
 @import './base';
 @import './variables';
+@import './animation';
 
 @import '../components/app-container/app-container.styles';
 @import '../components/header/header.styles';
 @import '../components/sidebar/sidebar.styles';
-@import '../components/main-content/main-content.styles'
+@import '../components/hotel-view/hotel-view.styles';
+@import '../components/overview/overview.styles';
+@import '../components//details//details.styles'
