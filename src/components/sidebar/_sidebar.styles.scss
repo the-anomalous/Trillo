@@ -5,13 +5,29 @@
   flex-direction: column;
   justify-content: space-between;
 
+  @media only screen and (max-width:$bp-medium) {
+    width: 100%;
+  }
+
   .side-nav {
     margin-top: 2rem;
     list-style: none;
 
+    @media only screen and (max-width:$bp-medium) {
+      display: flex;
+      margin: 0;
+    }
+
     &__item {
       margin: .5rem 0;
       position: relative;
+
+      @media only screen and (max-width:$bp-medium) {
+        margin: 0;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
     }
 
     &__item::before {
@@ -48,13 +64,22 @@
       font-size: 1.4rem;
       z-index: 10;
       position: relative;
-    }
 
+      @media only screen and (max-width:$bp-smallest) {
+        flex-direction: column;
+        padding: 1rem 0;
+      }
+    }
+    
     &__icon {
       height: 2.6rem;
       width: 2.6rem;
       fill: currentColor;
       margin-right: 2rem;
+      
+      @media only screen and (max-width:$bp-smallest) {
+        margin: 0;
+      }
     }
   }
 
@@ -64,5 +89,9 @@
     font-size: 1.3rem;
     letter-spacing: .2px;
     padding: 1.5rem;
+
+    @media only screen and (max-width:$bp-medium) {
+      display: none;
+    }
   }
 }

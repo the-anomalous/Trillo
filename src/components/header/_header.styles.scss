@@ -1,15 +1,18 @@
 .header {
-  height: 7rem;
   background-color: #fff;
   border-bottom: var(--line);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   font-size: 1.4rem;
-
+  padding: 1rem 0;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width:$bp-smallest) {
+    flex-wrap: wrap;
+  }
 
   .logo {
     width: 6.5rem;
@@ -48,26 +51,37 @@
       &::-webkit-input-placeholder {
         font-weight: 100;
       }
-    }
 
+      @media only screen and (max-width:$bp-smallest) {
+        flex: 0 0 100%;
+        border-radius: 0;
+      }
+    }
+    
     &__box:focus+&__button {
       background-color: var(--color-grey-light-3);
     }
-
+    
     &__button {
       border: none;
       background-color: var(--color-grey-light-2);
       cursor: pointer;
-
+      
       &:active {
         transform: translateY(2px);
       }
     }
-
+    
     &__icon {
       width: 2rem;
       height: 2rem;
       fill: var(--color-grey-dark-3);
+    }
+    
+    @media only screen and (max-width:$bp-smallest) {
+      order: 1;
+      flex: 0 0 100%;
+      border-radius: 0;
     }
   }
 

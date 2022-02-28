@@ -5,6 +5,15 @@
   padding: 4rem;
   font-size: 1.4rem;
 
+  @media only screen and (max-width:$bp-large) {
+    font-size: 1.6rem;
+    padding: 2.5rem;
+  }
+
+  @media only screen and (max-width:$bp-small) {
+    flex-direction: column;
+  }
+
   .description{
     box-shadow: --box-shadow-light;
     padding: 2.5rem;
@@ -12,6 +21,15 @@
     flex: 0 0 60%;
     margin-right: 4rem;
     border-radius: 3px;
+
+    @media only screen and (max-width:$bp-medium) {
+      margin-right: 3rem;
+    }
+
+    @media only screen and (max-width:$bp-small) {
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
   
     .paragraph:not(:last-of-type) {
       margin-bottom: 2rem;
@@ -46,6 +64,10 @@
       display: flex;
       align-items: center;
 
+      &__friends {
+        display: flex;
+      }
+
       &__count{
         margin-right: auto;
         font-size: 1.3rem;
@@ -79,6 +101,10 @@
       padding: 3rem;
       position: relative;
       overflow: hidden;
+
+      @media only screen and (max-width:$bp-medium) {
+        padding: 2.25rem;
+      }
       
       &:not(:last-child) {
         margin-bottom: 2rem;
