@@ -68,5 +68,68 @@
 
   .reviews{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .review{
+      background-color: #fff;
+      box-shadow: var(--box-shadow-light);
+      border-radius: 3px;
+      padding: 3rem;
+      position: relative;
+      overflow: hidden;
+      
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+
+      &__text{
+        z-index: 100;
+        position: relative;
+      }
+
+      &__user{
+        margin-top: 2rem;
+        display: flex;
+        align-content: center;
+
+        &-photo{
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+        }
+
+        &-box{
+          margin-right: auto;
+          margin-left: 1rem;
+          font-size: 1.15rem;
+          text-transform: uppercase;
+          letter-spacing: .3px;
+        }
+
+        &--name{
+          font-weight: 900;
+        }
+      }
+
+      &::before {
+        content: '\201C';
+        display: block;
+        font-size: 20rem;
+        line-height: 1;
+        position: absolute;
+        top: -2.5rem;
+        left: -.8rem;
+        font-family: sans-serif;
+        z-index: 10;
+        color: var(--color-grey-light-2);
+      }
+
+      &__rating{
+        font-size: 2.3rem;
+        color: var(--color-primary);
+      }
+    }
   }
 }

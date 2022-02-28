@@ -10,12 +10,23 @@
     border-bottom: 1px solid currentColor;
     padding: .5rem;
     cursor: pointer;
+    transition: margin .2s;
     transition-delay: .1s;
     letter-spacing: .2px;
 
+    & span{
+      display: inline-block;
+      margin-left: 3px;
+    }
+    
+    
     &:hover {
       color: var(--color-grey-dark-1);
       animation: pulsate 1s infinite;
+      
+      span{
+        margin-left: 8px;
+      }
     }
   }
 }

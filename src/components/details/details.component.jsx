@@ -36,7 +36,40 @@ const Details = () => {
       </div>
 
       <div className="reviews">
-        User Review
+        <figure className="review">
+          <blockquote className="review__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
+          </blockquote>
+          
+          <figcaption className="review__user">
+            <img src={require('../../assets/user-1.jpg')} alt="user 1" className="review__user-photo" />
+            <div className="review__user-box">
+              <p className="review__user--name">Nick Smith</p>
+              <p className="review__user-date">Feb 23rd, 2022</p>
+            </div>
+            <div className="review__rating">7.6</div>
+          </figcaption>
+        </figure>
+
+        <figure className="review">
+          <blockquote className="review__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
+          </blockquote>
+
+          <figcaption className="review__user">
+            <img src={require('../../assets/user-2.jpg')} alt="user 2" className="review__user-photo" />
+            <div className="review__user-box">
+              <p className="review__user--name">Mary Thomas</p>
+              <p className="review__user-date">Sept 19, 2021</p>
+            </div>
+            <div className="review__rating">7.8</div>
+          </figcaption>
+        </figure>
+
+        <button className="btn-inline">
+          Show All
+          <span>&rarr;</span>
+        </button>
       </div>
     </div>
   )
